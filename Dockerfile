@@ -6,7 +6,6 @@ RUN apt-get update -y && apt-get install -y rsync
 RUN tlmgr install collection-latexrecommended
 RUN install2.r --error --skipinstalled \ 
   here \ 
-  kable \ 
   lubridate \ 
   tidyverse
 RUN installGithub.r \ 

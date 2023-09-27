@@ -1,6 +1,5 @@
 RUN install2.r --error --skipinstalled \ 
   here \ 
-  kable \ 
   lubridate \ 
   tidyverse
 RUN installGithub.r \ 
