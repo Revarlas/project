@@ -22,6 +22,7 @@ repro::automate_load_scripts()
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Title
 #Github Connection and Usage
 usethis::use_git_config(
   user.name = "Revarlas", # <-- change to your name
