@@ -9,6 +9,7 @@ repro:
     - here
     - tidyverse
     - lubridate
+    - kable
     - aaronpeikert/repro@fc7e884
   scripts:
     - R/prepare_inflation.R
@@ -46,6 +47,9 @@ usethis::use_github()
 ```{r}
 #moving on to package "repro"
 repro::automate()
+repro::automate_docker(path = ".")
+repro::use_gha_docker()
+
 ```
 
 
