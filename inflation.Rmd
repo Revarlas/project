@@ -19,8 +19,10 @@ repro:
 ```{r setup, include=FALSE}
 repro::automate_load_packages()
 repro::automate_load_scripts()
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+```
 
+#Github Connection and Usage
 usethis::use_git_config(
   user.name = "Revarlas", # <-- change to your name
   user.email = "c.hassler92@googlemail.com", # <-- and your email
@@ -41,16 +43,10 @@ usethis::use_github()
 
 #Unused command for private upload: usethis::use_github(private = TRUE)
 
-```
-
-```{r}
 #moving on to package "repro"
 repro::automate()
 repro::automate_docker(path = ".")
 repro::use_gha_docker()
-
-```
-
 
 The dataset we use stems from the [Bank of England Research datasets](https://www.bankofengland.co.uk/statistics/research-datasets).
 
