@@ -28,6 +28,7 @@ usethis::use_git_config(
 
 usethis::use_git()
 
+#Create and set Token for this computing environment
 usethis::create_github_token(description = "Token for Repro Workshop 2023 Test")
 
 gitcreds::gitcreds_set() # <-- Token must *not* go into brackets, paste when asked
@@ -37,6 +38,9 @@ usethis::gh_token_help()
 
 #Upload to public GitHub Web
 usethis::use_github()
+
+#Unused command for private upload: usethis::use_github(private = TRUE)
+
 ```
 
 The dataset we use stems from the [Bank of England Research datasets](https://www.bankofengland.co.uk/statistics/research-datasets).
