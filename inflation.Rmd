@@ -19,7 +19,6 @@ repro:
 ```{r setup, include=FALSE}
 repro::automate_load_packages()
 repro::automate_load_scripts()
-library(tibble)
 knitr::opts_chunk$set(echo = TRUE)
 
 usethis::use_git_config(
