@@ -19,6 +19,7 @@ repro:
 ```{r setup, include=FALSE}
 repro::automate_load_packages()
 repro::automate_load_scripts()
+library(tibble)
 knitr::opts_chunk$set(echo = TRUE)
 
 usethis::use_git_config(
@@ -42,6 +43,12 @@ usethis::use_github()
 #Unused command for private upload: usethis::use_github(private = TRUE)
 
 ```
+
+```{r}
+#moving on to package "repro"
+repro::automate()
+```
+
 
 The dataset we use stems from the [Bank of England Research datasets](https://www.bankofengland.co.uk/statistics/research-datasets).
 
@@ -83,6 +90,3 @@ inflation %>%
 with(mtcars, plot(hp, mpg))
 ```
 
-```{python}
-print("Hello World! Python here, do you miss R already?")
-```
